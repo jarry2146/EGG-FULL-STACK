@@ -1,0 +1,9 @@
+1
+La condición debe ser una expresión lógica, que al ser evaluada retorna Verdadero o Falso. La cláusula Entonces debe aparecer siempre, pero la cláusula Sino puede no estar. En ese caso, si la condición es falsa no se ejecuta ninguna instrucción y la ejecución del programa continúa con la instrucción siguiente.
+
+2
+Una expresión condicional es un tipo de expresión que comprueba los datos para ver si cumple una condición y, a continuación, realiza una acción en función del resultado.
+
+
+4
+Esta función MOD  divide un número entre otro y devuelve el resto.

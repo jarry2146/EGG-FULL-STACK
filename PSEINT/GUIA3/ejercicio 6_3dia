@@ -1,0 +1,19 @@
+//Realizar un procedimiento que permita intercambiar el valor de dos variables de tipo entero.
+//La variable A, debe terminar con el valor de la variable B.
+
+Algoritmo valorVSreferencia
+	Definir num1,num2,auxiliar Como Entero
+	auxiliar=0
+	Escribir "digitel el primer numero"
+	leer num1
+	Escribir "Ddigite el segundo numero"
+	leer num2
+	Escribir "ahora el primer numero es: ", num2, " y el segundo es: ",num1
+	cambioDeCosito(num1,num2,auxiliar)
+FinAlgoritmo
+
+SubProceso cambioDeCosito(num1,num2,auxiliar Por Valor)
+	auxiliar=num1
+	num1=num2
+	num2=auxiliar
+FinSubProceso

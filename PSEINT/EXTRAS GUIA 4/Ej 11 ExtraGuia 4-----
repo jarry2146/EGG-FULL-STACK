@@ -1,0 +1,28 @@
+Algoritmo Ej11ExtraGuia4
+//Realizar un programa que cree una matriz de 5x15 y deberemos llenar la matriz de unos y
+//	ceros. Llenando el marco o la delimitación externa de la matriz de unos y la parte interna de
+//	ceros.
+//Por ejemplo, nuestro matriz final debería verse así:
+//	111111111111111
+//	100000000000001
+//	100000000000001
+//	100000000000001
+//	111111111111111	
+Definir matriz, f, c Como Entero	
+Dimension matriz(5,15)	
+Para f=0 hasta 4 Con paso 1 Hacer
+	Para c=0 Hasta 14 Con Paso 1 hacer
+		Si f=0 o f=4 o c=0 o c=14 Entonces
+			matriz(f,c)=1
+			SiNo	
+				matriz(f,c)=0
+		FinSi	
+	FinPara
+FinPara
+Para f=0 Hasta 4 Hacer
+	Para c=0 Hasta 14 Hacer
+		Escribir SinSaltar matriz[f,c], " "
+	FinPara
+	Escribir""
+FinPara
+FinAlgoritmo

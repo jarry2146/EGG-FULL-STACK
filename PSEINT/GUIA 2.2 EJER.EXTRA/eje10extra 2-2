@@ -1,0 +1,61 @@
+//Programar un juego donde la computadora elige un número al azar entre 1 y 10, y a 
+//continuación el jugador tiene que adivinarlo. La estructura del programa es la siguiente:
+//	1º) El programa elige al azar un número n entre 1 y 10. 
+//	2º) El usuario ingresa un número x. 
+//	3º) Si x no es el número exacto, el programa indica si n es más grande o más pequeño que 
+//			el número ingresado.
+//			4º) Repetimos desde 2) hasta que x sea igual a n. 
+//			El programa tiene que imprimir los mensajes adecuados para informarle al usuario qué 
+//				hacer y qué pasó hasta que adivine el número
+
+algoritmo eje10extra
+	Definir azaar, x Como Entero
+
+	hacer 
+		azaar <- azar(10)
+		Escribir "adivine el numero"
+		
+		si 10 = azaar Entonces
+			Escribir "esta en un numero de dos digitos"
+		SiNo
+			si 9= azaar Entonces
+				
+				Escribir "3 al cuadrado"
+			SiNo
+				si 8= azaar Entonces
+					Escribir "2 al cubo"
+					si 7= azaar Entonces
+						Escribir " numero religioso"
+					sino
+						si 6 = azaar Entonces
+							Escribir "numero de la bestia"
+						SiNo
+							si 5= azaar Entonces
+								Escribir "la mitad del limite"
+							sino 
+								si 4= azaar Entonces
+									Escribir "par x2"
+								sino
+									si 3 = azaar Entonces
+										Escribir "cuenta regresiva"
+									SiNo
+										si 2= azaar Entonces
+											Escribir "segundo numero en la fila"
+										sino
+											si 1= azaar Entonces
+												Escribir "numero limite"
+											FinSi
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		leer x
+	Mientras Que x <> azaar
+	Escribir "adivinaste"
+FinAlgoritmo
+	

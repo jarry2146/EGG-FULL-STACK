@@ -1,0 +1,37 @@
+Algoritmo sin_titulo
+	Definir nota, tp, expo, parcial, n, i, prom, desaprobados, integrador, mayor, aprobados Como Real
+	Escribir "Ingrese número de estudiantes"
+	leer n
+	prom = 0
+	desaprobados = 0
+	integrador = 0
+	mayor = 0
+	aprobados = 0
+	Para i = 1 Hasta n Hacer
+		Escribir "Alumno " i
+		Escribir "Ingrese nota del tp"
+		leer tp
+		Escribir "Ingrese nota de la exposición"
+		leer expo
+		Escribir "Ingrese nota del parcial"
+		leer parcial
+		nota = tp*0.35+expo*0.25+parcial*0.4
+		si nota < 6.5 Entonces
+			prom = prom + nota
+			desaprobados = desaprobados+1
+		FinSi
+		si tp>7.5 Entonces
+			integrador = integrador+1
+		FinSi
+		si expo>=mayor Entonces
+			mayor = expo
+		FinSi
+		si parcial >= 4 y parcial <= 7.5 Entonces
+			aprobados = aprobados + 1
+		FinSi
+	FinPara
+	Escribir "El promedio final de los estudiantes desaprobados es " prom/desaprobados
+	Escribir "El porcentaje de alumnos con nota de tp mayor a 7.5 es " (integrador/n)*100 " por ciento"
+	Escribir "La mayor nota obtenida en la exposiciones es " mayor
+	Escribir "Estudiantes que obtuvieron entre 4 y 7.5: " aprobados
+FinAlgoritmo
