@@ -5,7 +5,7 @@ public class ejerci15 {
     public static void main(String[] args) {
        
         int vector[]= new int[101];
-        for(int i=1; i <101; ++i){
+        for(int i=1; i <vector.length; ++i){
             vector[i]=i;
             System.out.println(""+vector[i]);
             
@@ -20,5 +20,6 @@ public class ejerci15 {
            }
         }
     }
-    
 }
+    
+

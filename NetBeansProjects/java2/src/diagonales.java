@@ -27,8 +27,8 @@ public class diagonales {
                 if (i == j) {
                     suma = suma + matriz[i][j];
 
-                    System.out.println("" + suma);
-                    System.out.println("tatal suma ");
+                    System.out.println("suma de diagonal primaria" + suma);
+                    
 
                 }
 
