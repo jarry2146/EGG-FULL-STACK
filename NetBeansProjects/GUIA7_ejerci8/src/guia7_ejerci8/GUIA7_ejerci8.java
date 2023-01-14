@@ -22,7 +22,7 @@ public class GUIA7_ejerci8 {
             System.out.println("5 reemplazar ");
             System.out.println("6 contiene ");
             System.out.println("7 Salir ");
-            Scanner leer = new Scanner(System.in);
+            Scanner leer = new Scanner(System.in).useDelimiter("\n");
             int opc = leer.nextInt();
             switch (opc) {
                 case 1:
