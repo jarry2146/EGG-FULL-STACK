@@ -12,6 +12,7 @@ public class PeliculaServicio {
     Scanner scan = new Scanner(System.in).useDelimiter("\n");
 
     ArrayList<Pelicula> listaPelicula = new ArrayList();
+//    HashMap<Pelicula> listaPelicula = new HashMap();
 
     public void menu() {
 
@@ -126,15 +127,15 @@ public class PeliculaServicio {
         }
 
     }
-
-    public void ordenarMenorMayor() {
-        for (Pelicula pelicula : listaPelicula) {
-            Collections.reverse(listaPelicula);
-            System.out.println(pelicula.getNombre());
-            System.out.println(pelicula.getDuracionPeliculaH());
+   public  void ordenarMenorMayor(){}
+        public static Comparator <Pelicula> ordenarMenorMayor=new Comparator<Pelicula>() {
+        @Override
+        public int compare(Pelicula t, Pelicula t1) {
+          return t.getDuracionPeliculaH().compareTo(t1.getDuracionPeliculaH());
+        
         }
-
-    }
+    
+    };
 
     public void ordenarPorTitulo() {
         for (Pelicula Pelicula : listaPelicula) {
@@ -149,7 +150,7 @@ public class PeliculaServicio {
         for (Pelicula pelicula : listaPelicula) {
 //          Collections.sort(listaPelicula);
             System.out.println(pelicula.getDirector());
-           
+
         }
 
     }

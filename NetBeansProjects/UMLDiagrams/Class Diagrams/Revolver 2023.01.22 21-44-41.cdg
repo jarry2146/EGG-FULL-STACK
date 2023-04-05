@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Revolver">
+  <ClassDiagramComponents>
+    <Class name="Revolver" package="entidad" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="posicionActual" type="int" visibility="private"/>
+        <Field name="posicionAgua" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="posiciónActual"/>
+          <Argument type="int" name="posiciónAgua"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPosiciónActual" returnType="int" visibility="public"/>
+        <Method name="setPosiciónActual" returnType="void" visibility="public">
+          <Argument type="int" name="posiciónActual"/>
+        </Method>
+        <Method name="getPosiciónAgua" returnType="int" visibility="public"/>
+        <Method name="setPosiciónAgua" returnType="void" visibility="public">
+          <Argument type="int" name="posiciónAgua"/>
+        </Method>
+        <Method name="llenarRevolver" returnType="void" visibility="public"/>
+        <Method name="mojar" returnType="boolean" visibility="public"/>
+        <Method name="siguienteChorro" returnType="void" visibility="public"/>
+        <Method name="ttoString" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
